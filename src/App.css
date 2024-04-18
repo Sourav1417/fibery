@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .wrapper {
+  position: relative;
+  overflow-x: hidden;
+} */
+
+@font-face {
+  font-family: ergisa;
+  src: url(../public/Ergisa-Regular.otf);
+}
+.Ergisa {
+  font-family: ergisa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.icon {
+    border: none;
+    border-radius: 50%;
+    background: #1fa694;
+    box-shadow: #0000000f 0 1px 10px, #00000029 0 2px 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .m-header {
+    padding: 0 20px;
+    width: 400px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .m-fibery-logo{
+    font-size: 1.3rem;
+    line-height: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  .m-build-work {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    width: 25rem;
+    margin-left: 2.3rem;
+  }
+  .m-header-small-text {
+    font-size: 1.1rem;
+    width: 17rem;
+    line-height: 1.5rem;
+    margin-left: 2.3rem;
+  }
+  .m-signup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    gap: 4rem;
+    width: 22rem;
+    margin: 0 auto;
+  }
+  .m-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .m-email-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 22rem;
+  }
+  .m-email-input {
+    width: 22rem;
   }
 }
